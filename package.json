@@ -1,20 +1,33 @@
 {
   "name": "api.hacklunch",
   "version": "1.0.0",
-  "description": "",
+  "description": "API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -w",
+    "start": "nodemon dist/index.js",
+    "build": "webpack -w"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pullstream/api.hacklunch.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "davy@pullstream.io",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pullstream/api.hacklunch/issues"
   },
-  "homepage": "https://github.com/pullstream/api.hacklunch#readme"
+  "homepage": "https://github.com/pullstream/api.hacklunch#readme",
+  "dependencies": {
+    "fs": "0.0.2",
+    "koa": "^1.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.5.0",
+    "bluebird": "^3.3.1",
+    "json-loader": "^0.5.4"
+  }
 }
